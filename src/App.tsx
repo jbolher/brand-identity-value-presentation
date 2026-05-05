@@ -69,7 +69,7 @@ export default function App() {
       } else if (e.key === ' ') {
         e.preventDefault();
         goTo(Math.min(TOTAL - 1, activeSlide + 1));
-
+      }
     };
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
